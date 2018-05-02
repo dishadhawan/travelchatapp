@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mumbai3">
+
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+
+    >
+
+
+
+
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/translate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/mybutton1"
+            android:layout_weight="1"
+
+            android:fontFamily="casual"
+            android:text="@string/translate"
+            android:textSize="19dp"
+
+
+            android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/transport"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton1"
+
+                android:text="@string/transport"
+                android:textSize="19dp"
+                android:fontFamily="casual"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="0dp"
+
+                android:layout_marginTop="350dp"
+
+                />
+
+
+
+
+
+    </TableRow>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    >
+
+
+    <TableRow >
+
+        <Button
+            android:id="@+id/eateries"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+
+            android:layout_marginLeft="2dp"
+            android:fontFamily="casual"
+
+
+            android:text="@string/eateries"
+            android:textSize="19dp"
+            android:background="@drawable/mybutton1"
+
+            />
+
+
+        <Button
+            android:id="@+id/attractions"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_marginLeft="2dp"
+            android:fontFamily="casual"
+
+
+            android:text="@string/attractions"
+            android:textSize="19dp"
+            android:background="@drawable/mybutton1"
+
+
+            />
+
+
+    </TableRow>
+</TableLayout>
+
+    <TableLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/chatroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/mybutton1"
+            android:fontFamily="casual"
+            android:text="@string/chat"
+            android:textSize="19dp"
+
+
+
+            />
+    </TableLayout>
+</TableLayout>
+
+
+
+</LinearLayout>

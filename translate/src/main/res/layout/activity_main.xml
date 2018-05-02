@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.hugoamvieira.translator.MainActivity">
+
+    <Button
+        android:id="@+id/translation_history_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/translation_history_string" />
+
+    <Button
+        android:id="@+id/paste_clipboard_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translation_history_btn"
+        android:text="@string/paste_clipboard_btn_string" />
+
+    <RelativeLayout
+        android:id="@+id/result_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paste_clipboard_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/text_to_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Spinner
+            android:id="@+id/languages_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_to_translate"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/supported_translations" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/languages_spinner"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

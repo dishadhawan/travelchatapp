@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.firebase.codelab.friendlychat.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/result_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/text_to_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="?attr/colorAccent"
+            android:ems="10"
+            android:scrollbars="vertical"
+            android:maxHeight="1.5in"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/paste_clipboard_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/paste_clipboard_btn_string" />
+
+        <Spinner
+            android:id="@+id/languages_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/text_to_translate"
+            android:entries="@array/supported_translations" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/languages_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="15dp"
+
+            android:scrollbars="vertical"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

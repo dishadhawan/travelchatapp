@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.google.firebase.codelab.friendlychat"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/appname"
+        android:label="TravPal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--<activity android:name="com.google.firebase.codelab.friendlychat.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="friendlychat.firebase.google.com"
+                    android:scheme="http"
+                    android:pathPrefix="/message"
+                    />
+            </intent-filter>
+        </activity>-->
+        <activity android:name="com.google.firebase.codelab.friendlychat.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity android:name=".MainActivity" android:screenOrientation="portrait">
+           <intent-filter>
+
+           <action android:name="android.intent.action.VIEW"/>
+           <category android:name="android.intent.category.DEFAULT"/>
+           <category android:name="android.intent.category.BROWSABLE"/>
+           <data
+               android:host="friendlychat.firebase.google.com"
+               android:scheme="http"
+               android:pathPrefix="/message"
+               />
+       </intent-filter>
+       </activity>
+
+
+
+        <activity android:name=".SignInActivity" android:screenOrientation="portrait" />
+        <activity android:name=".LocationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Main1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TranslateActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".WebActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Web1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".EatActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Eat1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".TransportActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Transport1Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MenuActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Menu1Activity" android:screenOrientation="portrait"></activity>
+
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+
+</manifest>
